@@ -102,13 +102,6 @@ $(document).ready(function () {
     }
   });
 
-$(document).on("scroll", function () {
-  var scrollDistance = $(this).scrollTop();
-  if (window.matchMedia('(max-width: 1271px)').matches && scrollDistance > 750) {
-    $('.imgdiv2').addClass("slide-in-blurred-left");
-  }
-});
-
 
 $(document).on("scroll", function () {
   var scrollDistance = $(this).scrollTop();
@@ -128,24 +121,9 @@ $(document).on("scroll", function () {
 
 $(document).on("scroll", function () {
   var scrollDistance = $(this).scrollTop();
-  if (window.matchMedia('(max-width: 767px)').matches && scrollDistance > 1200) {
-    $('.card-1').addClass("slide-in-right");
-    $('.card-2').addClass("slide-in-left");
-  }
-});
-
-$(document).on("scroll", function () {
-  var scrollDistance = $(this).scrollTop();
-  if (window.matchMedia('(max-width: 767px)').matches && scrollDistance > 1850) {
-    $('.card-3').addClass("slide-in-right");
-    $('.card-4').addClass("slide-in-left");
-  }
-});
-$(document).on("scroll", function () {
-  var scrollDistance = $(this).scrollTop();
   if (window.matchMedia('(min-width: 992px)').matches && scrollDistance > 1650) {
     $('.box2').addClass("flip-in-ver-right");
     $('.box-1').addClass("flip-in-ver-left");
-    $('.stable').addClass("slide-right");
   }
 });
+
